@@ -1,28 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | QR code component</title>
+  <title>QrCode</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body{
+      background-color: rgb(213, 225, 239);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* 100% высоты экрана */
+      flex-direction: column;
+      margin: 0;
+      
+    }
+    .text{
+      margin-left: 16px;
+      margin-right: 16px;
+      height: 131px;
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+    .hyi1{
+      font-family: "Outfit", "regular";
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .hyi{
+      font-family: "Outfit", "Bold";
+      font-size: 22px;
+      line-height: 120%;
+      font-weight: 700;
+      font-style: normal;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .box{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      background-color: hsl(0, 0%, 100%);
+      width: 320px;
+      height: 499px;
+      border-radius: 10px;
+    }
+    .box img{
+      width: 288px;
+      height: 288px;
+      margin-left: 16px;
+      margin-top: 16px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="box">
+    <img src="images/image-qr-code.png" alt="qrcode" width="288px" height="288px">
+    <div class="text">
+      <p class="hyi">
+        Improve your front-end skills by building projects
+      </p>
+      <p class="hyi1">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
   </div>
 </body>
 </html>
